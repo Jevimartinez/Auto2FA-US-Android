@@ -13,7 +13,7 @@
 
 ### 1. Descargar e Instalar el APK
 
-1. Ve a la sección [**Releases**](./releases) de este repositorio.  
+1. Ve a la sección [**Releases**](https://github.com/Jevimartinez/Auto2FA-US-Android/releases) de este repositorio.  
 2. Descarga la versión más reciente del fichero **APK**.  
 3. Copia ese APK a tu dispositivo Android o descárgalo directamente en el móvil.  
 4. Activa la opción **“Orígenes desconocidos”** (o **“Permitir desde esta fuente”**) en los ajustes de Android, si no la tienes habilitada.  
