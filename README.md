@@ -13,7 +13,7 @@
 
 ### 1. Descargar e Instalar el APK
 
-1. Ve a la sección [**Releases**](./releases) de este repositorio (GitHub).  
+1. Ve a la sección [**Releases**](./releases) de este repositorio.  
 2. Descarga la versión más reciente del fichero **APK**.  
 3. Copia ese APK a tu dispositivo Android o descárgalo directamente en el móvil.  
 4. Activa la opción **“Orígenes desconocidos”** (o **“Permitir desde esta fuente”**) en los ajustes de Android, si no la tienes habilitada.  
@@ -30,7 +30,7 @@ Para que la extensión pueda generar tu TOTP, necesita el **secret (en Base32)**
    - **Copia** el secret.
 
 2. **Introducir el secret en la aplicación**
-   - **Abre** la app “Auto2FA-US Android” en la barra de aplicaciones.
+   - **Abre** la app “Auto2FA-US".
    - Verás un **campo** para introducir tu _secret_ (en Base32). 
    - El campo se muestra como **contraseña** (con puntitos) para proteger la vista del _secret_. 
    - Introduce el **secret**
@@ -42,7 +42,7 @@ Para que la extensión pueda generar tu TOTP, necesita el **secret (en Base32)**
 Para que la app autocomplete el TOTP en Blackboard, es necesario activar el **Servicio de Accesibilidad**:
 
 1. Ve a **Ajustes** > **Accesibilidad** en tu dispositivo.  
-2. Busca “Auto2FA-US Android” en la lista de servicios disponibles, es posible que tengas que hacer click en `Aplicaciones descargadas`, o algo similar.  
+2. Busca “Auto2FA-US” en la lista de servicios disponibles, es posible que tengas que hacer click en `Aplicaciones descargadas`, o algún ajuste similar.  
 3. Activa el servicio. Te pedirá confirmar, ya que un servicio de accesibilidad tiene altos privilegios.  
 4. Listo: cuando la app de Blackboard muestre la pantalla de login multifactor (US), el servicio detectará el campo de 2FA y lo autocompletará.
 
