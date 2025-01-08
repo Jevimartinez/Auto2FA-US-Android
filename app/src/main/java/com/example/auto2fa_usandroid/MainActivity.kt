@@ -71,18 +71,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // Check if the device is from Huawei/Honor and handle wakelock tag
-
-        var tag = "com.example.auto2fa_usandroid:LOCK"
-
-        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.M && Build.MANUFACTURER == "Huawei") {
-            tag = "LocationManagerService"
-        }
-
-        val wakeLock = (getSystemService(POWER_SERVICE) as PowerManager).newWakeLock(1, tag)
-        if (!wakeLock.isHeld) { wakeLock.acquire() }
-
-
         // 6. Save button
         saveButton.setOnClickListener {
             val rawSecret = secretEditText.text.toString().trim()

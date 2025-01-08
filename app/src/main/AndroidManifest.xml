@@ -42,6 +42,4 @@
         </activity>
 
     </application>
-    <uses-permission android:name="android.permission.WAKE_LOCK" tools:node="replace"
-        tools:ignore="ManifestOrder" />
 </manifest>
