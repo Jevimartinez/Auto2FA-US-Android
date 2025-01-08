@@ -25,7 +25,7 @@ Muchos fabricantes (sobre todo los chinos, como **Xiaomi**, **Huawei**, **OPPO**
 
 1. Visita [**dontkillmyapp.com**](https://dontkillmyapp.com/)  
 2. Selecciona el **fabricante** de tu dispositivo  
-3. Sigue las instrucciones para **deshabilitar** o **ajustar** la optimización de batería. Por ejemplo, en MIUI deberás **activar** el permiso de _Autostart_ o **excluir** esta app de restricciones de segundo plano.
+3. Sigue las instrucciones para **deshabilitar** o **ajustar** la optimización de batería. Por ejemplo, en MIUI deberás **activar** el permiso de _Autostart_ y marcar el ahorro de batería de la aplicación como **Sin restricciones**.
 
 Si no realizas estos pasos, tu dispositivo podría **cerrar** Auto2FA-US Android, evitando que autocomplete el código de la US en la app Blackboard cuando la inicies.
 
