@@ -44,15 +44,19 @@ class TotpAccessibilityService : AccessibilityService() {
 
         // Check node to check that we are in US auth page
         if (findNodeByViewId(rootNode, "com.blackboard.android.bbstudent:id/fragment_web_component_content_wv") == null) return
+        Log.d("TotpService", "Pantalla auth US")
 
         // Check OTP wrong code message to prevent loops
         if (findWrongOTPCodeRecursively(rootNode) != null) return
+        Log.d("TotpService", "No hay wrong OTP message")
 
         // Check if we are in the TOTP page
         val inputFactorNode = findInput2FactorNodeRecursively(rootNode) ?: return
+        Log.d("TotpService", "Input2factor detectado")
 
         val totpCode = generateTotp()
         if (totpCode == "NO_CODE") return  // There is no secret or it has raised an error
+        Log.d("TotpService", "Código TOTP generado")
 
         // Fill the TextInput
         val args = Bundle().apply {
@@ -62,7 +66,7 @@ class TotpAccessibilityService : AccessibilityService() {
             )
         }
         inputFactorNode.performAction(AccessibilityNodeInfo.ACTION_SET_TEXT, args)
-
+        Log.d("TotpService", "Código TOTP introducido")
 
         // Search recursively the button with ID notification_2factor_button_ok
         val okButtonNode = findOkButtonNodeRecursively(rootNode) ?: return

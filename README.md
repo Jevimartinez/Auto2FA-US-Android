@@ -19,8 +19,19 @@
 4. Activa la opción **“Orígenes desconocidos”** (o **“Permitir desde esta fuente”**) en los ajustes de Android, si no la tienes habilitada.  
 5. Abre el APK y sigue las instrucciones de instalación.
 
-### 2. Configurar la Aplicación
-Para que la extensión pueda generar tu TOTP, necesita el **secret (en Base32)** asociado a tu usuario de la Universidad de Sevilla.
+### 2. Ajustar Ahorro de Batería y Optimización de Dispositivo
+
+Muchos fabricantes (sobre todo los chinos, como **Xiaomi**, **Huawei**, **OPPO**, etc.) incluyen opciones de **ahorro de energía** o **optimización** que pueden **cerrar** la app en segundo plano o al apagar la pantalla, impidiendo que la aplicación funcione correctamente.
+
+1. Visita [**dontkillmyapp.com**](https://dontkillmyapp.com/)  
+2. Selecciona el **fabricante** de tu dispositivo  
+3. Sigue las instrucciones para **deshabilitar** o **ajustar** la optimización de batería. Por ejemplo, en MIUI deberás **activar** el permiso de _Autostart_ o **excluir** esta app de restricciones de segundo plano.
+
+Si no realizas estos pasos, tu dispositivo podría **cerrar** Auto2FA-US Android, evitando que autocomplete el código de la US en la app Blackboard cuando la inicies.
+
+### 3. Configurar la Aplicación
+
+Para que la aplicación pueda generar tu TOTP, necesita el **secret (en Base32)** asociado a tu usuario de la Universidad de Sevilla.
 
 1. **Obtener el secret desde [2FA.US.ES](https://2fa.us.es/)**
    - Inicia sesión y ve a la sección **"Gestionar"**.
@@ -33,11 +44,11 @@ Para que la extensión pueda generar tu TOTP, necesita el **secret (en Base32)**
    - **Abre** la app “Auto2FA-US".
    - Verás un **campo** para introducir tu _secret_ (en Base32). 
    - El campo se muestra como **contraseña** (con puntitos) para proteger la vista del _secret_. 
-   - Introduce el **secret**
-   - Pulsa **“Guardar”**.
+   - Introduce el **secret**  
+   - Pulsa **“Guardar”**.  
    - Si es válido, se almacenará en `EncryptedSharedPreferences`. Si no lo es, la aplicación mostrará un **error**.
 
-### 3. Habilitar el Servicio de Accesibilidad
+### 4. Habilitar el Servicio de Accesibilidad
 
 Para que la app autocomplete el TOTP en Blackboard, es necesario activar el **Servicio de Accesibilidad**:
 
@@ -69,6 +80,22 @@ Para que la app autocomplete el TOTP en Blackboard, es necesario activar el **Se
 3. **Servicio de Accesibilidad**  
    - El servicio de accesibilidad tiene amplios permisos para leer la interfaz.  
    - Asegúrate de **confiar** en esta aplicación, pues podrá ver y actuar en la pantalla cuando se active en la app Blackboard.
+
+## Posibles Problemas y Soluciones
+
+1. **Secret TOTP incorrecto**  
+   - Asegúrate de **copiar** y **pegar** correctamente el secret en Base32 (en mayúsculas).  
+   - Si no coinciden, el código TOTP será inválido y la app no podrá autocompletarlo correctamente.
+
+2. **Servicio de Accesibilidad desactivado**  
+   - Verifica en **Ajustes > Accesibilidad** que “Auto2FA-US” esté **activado**.  
+   - Algunas veces, tras una actualización o un reinicio, podría desactivarse y requerir tu confirmación de nuevo.
+
+3. **Opciones de batería y optimización**  
+   - Si tu dispositivo aplica restricciones (ahorro de energía, “Autostart” desactivado, etc.), la app podría cerrarse en segundo plano y dejar de autocompletar.  
+   - Revisa las instrucciones en el apartado de **Ajustar Ahorro de Batería** y [dontkillmyapp.com](https://dontkillmyapp.com/) para tu fabricante.  
+   - Tras aplicar los cambios, **reinicia** el dispositivo o reinstala la app y comprueba de nuevo que el servicio de accesibilidad sigue **activado**.
+
 
 ## Acerca de
 

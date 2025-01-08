@@ -31,4 +31,16 @@
         android:layout_marginTop="16dp"
         tools:ignore="HardcodedText" />
 
+    <TextView
+        android:id="@+id/miuiWarningTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
 </LinearLayout>

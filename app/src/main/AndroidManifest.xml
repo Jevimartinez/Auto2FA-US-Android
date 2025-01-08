@@ -17,7 +17,11 @@
         <service
             android:name=".services.TotpAccessibilityService"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/accessibility_service_name"
+            android:description="@string/accessibility_service_description"
+            android:packageNames="@null">
+
 
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />
@@ -28,7 +32,8 @@
                 android:resource="@xml/totp_accessibility_config" />
         </service>
 
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,7 +41,7 @@
             </intent-filter>
         </activity>
 
-
     </application>
-
+    <uses-permission android:name="android.permission.WAKE_LOCK" tools:node="replace"
+        tools:ignore="ManifestOrder" />
 </manifest>

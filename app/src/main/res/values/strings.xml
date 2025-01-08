@@ -3,4 +3,5 @@
     <string name="accessibility_service_description">
         "Servicio de accesibilidad que autocompleta el segundo factor de autenticación en la página de login de la US en la aplicación de Blackboard.
     </string>
+    <string name="accessibility_service_name">Auto2FA-US (Service)</string>
 </resources>

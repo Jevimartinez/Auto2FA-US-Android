@@ -9,6 +9,7 @@ appcompat = "1.6.1"
 kotlinOnetimepassword = "2.4.1"
 material = "1.10.0"
 materialVersion = "<version>"
+miuiAutostart = "v1.3"
 securityCrypto = "1.1.0-alpha06"
 totpAndroid = "1.0.0"
 
@@ -22,6 +23,7 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 kotlin-onetimepassword = { module = "dev.turingcomplete:kotlin-onetimepassword", version.ref = "kotlinOnetimepassword" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 material-vversion = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+miui-autostart = { module = "com.github.XomaDev:MIUI-autostart", version.ref = "miuiAutostart" }
 totp-android = { module = "com.lukasreschke:totp-android", version.ref = "totpAndroid" }
 
 [plugins]

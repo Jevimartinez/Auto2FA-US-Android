@@ -26,6 +26,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -36,7 +37,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -47,4 +47,5 @@ dependencies {
     implementation(libs.kotlin.onetimepassword)
     implementation(libs.androidx.security.crypto)
     implementation(libs.material.vversion)
+    implementation(libs.miui.autostart)
 }
