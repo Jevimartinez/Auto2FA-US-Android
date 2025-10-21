@@ -32,6 +32,25 @@
         tools:ignore="HardcodedText" />
 
     <TextView
+        android:id="@+id/accessibilityWarningTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="La app necesita permiso de Accesibilidad para funcionar. Por favor, actívalo."
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/accessibilitySettingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ir a Ajustes de Accesibilidad"
+        android:visibility="gone" />
+
+    <TextView
         android:id="@+id/miuiWarningTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,5 +61,32 @@
         android:visibility="gone"
         android:textSize="14sp"
         tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/batteryWarningTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="La app necesita permiso para funcionar sin restricciones de batería."
+        android:textColor="@android:color/holo_orange_dark"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/batterySettingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ir a Ajustes de Batería"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/autostartSettingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Abrir Autostart"
+        android:visibility="gone" />
 
 </LinearLayout>
