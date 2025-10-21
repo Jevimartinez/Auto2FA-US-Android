@@ -100,6 +100,7 @@ En caso de que la aplicación te deje de funcionar después de un tiempo (Por ej
    - Si tu dispositivo aplica restricciones (ahorro de energía, “Autostart” desactivado, etc.), la app podría cerrarse en segundo plano y dejar de autocompletar.  
    - Revisa las instrucciones en el apartado de **Ajustar Ahorro de Batería** y [dontkillmyapp.com](https://dontkillmyapp.com/) para tu fabricante.  
    - Tras aplicar los cambios, **reinicia** el dispositivo o reinstala la app y comprueba de nuevo que el servicio de accesibilidad sigue **activado**.
+   - Ve a la [sección widget](#5-widget) y activa el Widget de la aplicación si los pasos anteriores no funcionan.
 
 
 ## Acerca de
