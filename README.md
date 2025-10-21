@@ -54,8 +54,13 @@ Para que la app autocomplete el TOTP en Blackboard, es necesario activar el **Se
 
 1. Ve a **Ajustes** > **Accesibilidad** en tu dispositivo.  
 2. Busca “Auto2FA-US” en la lista de servicios disponibles, es posible que tengas que hacer click en `Aplicaciones descargadas`, o algún ajuste similar.  
-3. Activa el servicio. Te pedirá confirmar, ya que un servicio de accesibilidad tiene altos privilegios.  
+3. Activa el servicio. Te pedirá confirmar, ya que un servicio de accesibilidad tiene altos privilegios. En caso de que no te deje activarlo porque es un permiso restringido, debes ir a Ajustes > Aplicaciones > Auto2FA-uS > Más > Conceder permisos restringidos
 4. Listo: cuando la app de Blackboard muestre la pantalla de login multifactor (US), el servicio detectará el campo de 2FA y lo autocompletará.
+
+
+### 5. Widget
+
+En caso de que la aplicación te deje de funcionar después de un tiempo (Por ejemplo, al día siguiente), puede deberse a que los ajustes de optimización de batería estén cerrando la aplicación cuando está en segundo plano. Si sigues teniendo problemas, la aplicación tiene un widget, con el logo de Blackboard. Este widget lo que hace es ejecutar primero el servicio de Auto2FA y luego ejecutar Blackboard. De este modo, aseguramos que el servicio se esté ejecutando antes de abrir la aplicación de Blackboard.
 
 ## Funcionamiento
 
